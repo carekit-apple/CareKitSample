@@ -3,17 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03BF9D6726869E5F00898ACE /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03BF9D6626869E5F00898ACE /* CareKit */; };
+		03BF9D6926869E5F00898ACE /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 03BF9D6826869E5F00898ACE /* CareKitStore */; };
+		03BF9D6B26869E5F00898ACE /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03BF9D6A26869E5F00898ACE /* CareKitUI */; };
 		03F0600A2331946600CCE09B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F060092331946600CCE09B /* SceneDelegate.swift */; };
-		51431F9B23D166AE006A7CFD /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51431F9823D166AE006A7CFD /* CareKit.framework */; };
-		51431F9C23D166AE006A7CFD /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51431F9823D166AE006A7CFD /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51431F9D23D166AE006A7CFD /* CareKitStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51431F9923D166AE006A7CFD /* CareKitStore.framework */; };
-		51431F9E23D166AE006A7CFD /* CareKitStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51431F9923D166AE006A7CFD /* CareKitStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51431F9F23D166AE006A7CFD /* CareKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51431F9A23D166AE006A7CFD /* CareKitUI.framework */; };
-		51431FA023D166AE006A7CFD /* CareKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51431F9A23D166AE006A7CFD /* CareKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5173CB8A23C3A846007655A0 /* OCKSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173CB8923C3A846007655A0 /* OCKSampleUITests.swift */; };
 		E72B2C0A226939E3009A9438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B2C09226939E3009A9438 /* AppDelegate.swift */; };
 		E72B2C14226939E4009A9438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72B2C12226939E4009A9438 /* LaunchScreen.storyboard */; };
@@ -31,22 +28,6 @@
 			remoteInfo = OCKSample;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		51431FA223D166AE006A7CFD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				51431F9E23D166AE006A7CFD /* CareKitStore.framework in Embed Frameworks */,
-				51431F9C23D166AE006A7CFD /* CareKit.framework in Embed Frameworks */,
-				51431FA023D166AE006A7CFD /* CareKitUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03580E3E23CFA2E400A57818 /* OCKSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OCKSample.entitlements; sourceTree = "<group>"; };
@@ -73,9 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51431F9D23D166AE006A7CFD /* CareKitStore.framework in Frameworks */,
-				51431F9B23D166AE006A7CFD /* CareKit.framework in Frameworks */,
-				51431F9F23D166AE006A7CFD /* CareKitUI.framework in Frameworks */,
+				03BF9D6926869E5F00898ACE /* CareKitStore in Frameworks */,
+				03BF9D6726869E5F00898ACE /* CareKit in Frameworks */,
+				03BF9D6B26869E5F00898ACE /* CareKitUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +153,6 @@
 				E72B2C02226939E3009A9438 /* Sources */,
 				E72B2C04226939E3009A9438 /* Resources */,
 				51431FA123D166AE006A7CFD /* Frameworks */,
-				51431FA223D166AE006A7CFD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +160,9 @@
 			);
 			name = OCKSample;
 			packageProductDependencies = (
+				03BF9D6626869E5F00898ACE /* CareKit */,
+				03BF9D6826869E5F00898ACE /* CareKitStore */,
+				03BF9D6A26869E5F00898ACE /* CareKitUI */,
 			);
 			productName = CareKitDemoApp;
 			productReference = E72B2C06226939E3009A9438 /* OCKSample.app */;
@@ -213,6 +196,9 @@
 				Base,
 			);
 			mainGroup = E72B2BFD226939E3009A9438;
+			packageReferences = (
+				03BF9D6526869E5F00898ACE /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = E72B2C07226939E3009A9438 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -573,6 +559,35 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03BF9D6526869E5F00898ACE /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03BF9D6626869E5F00898ACE /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BF9D6526869E5F00898ACE /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		03BF9D6826869E5F00898ACE /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BF9D6526869E5F00898ACE /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		03BF9D6A26869E5F00898ACE /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BF9D6526869E5F00898ACE /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E72B2BFE226939E3009A9438 /* Project object */;
 }
